@@ -13,9 +13,4 @@ from func_1 import fun1
 """
 
 if __name__ == '__main__':
-    # Запрашиваем переменные
-    tag = str(input("Введите тег: "))
-    s = str(input("Введите строку: "))
-
-    # Вызов функции
-    print(fun1(tag)(s))
+    print(fun1(input('Введите тег: '))(input('Введите строку: ')))

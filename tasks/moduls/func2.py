@@ -1,9 +1,6 @@
 import sys
 
 
-__all__ = ["show_commands", "add_student", "show_list", "show_selected", "main"]
-
-
 def show_commands():
     """Список команд"""
     print("Список команд:\n")

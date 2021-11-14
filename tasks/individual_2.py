@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from modul import *
-
+from moduls import main, show_commands
 
 if __name__ == '__main__':
-    # Список студентов.
     show_commands()
 
     main()
