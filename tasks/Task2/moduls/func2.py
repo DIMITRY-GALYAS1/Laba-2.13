@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import sys
-
-
 def show_commands():
     """Список команд"""
     print("Список команд:\n")
@@ -79,27 +76,3 @@ def show_selected(students):
             )
     if count == 0:
         print('Таких студентов нет')
-
-
-def main():
-    students = []
-    # Организовать бесконечный цикл запроса команд.
-    while True:
-        # Запросить команду из терминала.
-        command = input(">>> ").lower()
-
-        # Выполнить действие в соответствие с командой.
-        if command == 'exit':
-            break
-
-        elif command == 'add':
-            add_student(students)
-
-        elif command == 'list':
-            show_list(students)
-
-        elif command.startswith('select'):
-            show_selected(students)
-
-        else:
-            print(f"Неизвестная команда {command}", file=sys.stderr)
